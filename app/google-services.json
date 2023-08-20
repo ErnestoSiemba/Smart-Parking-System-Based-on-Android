@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "882019392835",
+    "project_id": "geniuspark-4831d",
+    "storage_bucket": "geniuspark-4831d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:882019392835:android:39bf0534d8a37a944663f6",
+        "android_client_info": {
+          "package_name": "com.glowingsoft.carplaterecognizer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "882019392835-aufr1og7kv12rdfh0vbg88jsjpo00u5g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyU8fbv2kTL4p9enAGQGhaa00ItjvbfZY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "882019392835-aufr1og7kv12rdfh0vbg88jsjpo00u5g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

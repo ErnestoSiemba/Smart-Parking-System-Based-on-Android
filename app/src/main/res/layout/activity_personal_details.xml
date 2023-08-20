@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.Profile.PersonalDetails">
+
+    <include layout="@layout/custom_action_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/normal_details_layout"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/CustomTextInputLayout"
+                app:shapeAppearance="@style/CutEdges"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fullname_layout"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:hint="@string/fullName"
+                app:hintTextColor="@color/default_color"
+                app:startIconDrawable="@drawable/baseline_supervised_user_circle_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fullname_edit_text"
+                    android:inputType="textPersonName"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/CustomTextInputLayout"
+                app:shapeAppearance="@style/CutEdges"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nin_layout"
+                android:hint="NIN Number"
+                app:hintTextColor="@color/default_color"
+                android:layout_below="@id/fullname_layout"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:startIconDrawable="@drawable/baseline_credit_card_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nin_edit_text"
+                    android:textAllCaps="true"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/CustomTextInputLayout"
+                app:shapeAppearance="@style/CutEdges"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/phone_number_layout"
+                android:hint="@string/phoneNumber"
+                app:hintTextColor="@color/default_color"
+                android:layout_below="@id/nin_layout"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:startIconDrawable="@drawable/baseline_phone_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/phone_edit_text"
+                    android:inputType="phone|number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/update_details_button"
+                android:layout_below="@id/phone_number_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/update_normal_button"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:background="@drawable/button_layout"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:id="@+id/view"
+                android:layout_height="2dp"
+                android:layout_below="@id/update_details_button"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey_5" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/CustomTextInputLayout"
+                app:shapeAppearance="@style/CutEdges"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/current_email_layout"
+                android:hint="@string/current_email"
+                app:hintTextColor="@color/default_color"
+                android:layout_below="@+id/view"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:startIconDrawable="@drawable/baseline_email_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/current_email_edit_text"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/CustomTextInputLayout"
+                app:shapeAppearance="@style/CutEdges"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/new_email_layout"
+                android:hint="@string/new_email"
+                app:hintTextColor="@color/default_color"
+                android:layout_below="@id/current_email_layout"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:startIconDrawable="@drawable/baseline_email_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/new_email_edit_text"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/CustomTextInputLayout"
+                app:shapeAppearance="@style/CutEdges"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/password_layout"
+                android:hint="@string/current_password"
+                app:hintTextColor="@color/default_color"
+                android:layout_below="@id/new_email_layout"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:passwordToggleEnabled="true"
+                app:startIconDrawable="@drawable/baseline_vpn_key_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/password_edit_text"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/update_email_button"
+                android:layout_below="@id/password_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/update_email"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:background="@drawable/button_layout"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

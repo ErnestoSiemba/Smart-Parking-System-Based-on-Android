@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:name=".api.GlobleClass"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GeniusPark"
+        tools:replace="android:allowBackup"
+        tools:targetApi="31">
+        <activity
+            android:name=".DriverUser.Activities.Bluetooth"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.hover.ApiKey"
+            android:value="1d1ec3e6feb1199d949f8d50c4826baf" />
+
+        <activity
+            android:name=".ui.SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OwnerUser.Activities.AreaHistory"
+            android:exported="false" />
+        <activity
+            android:name=".DriverUser.Activities.BookingDetails"
+            android:exported="false" />
+        <activity
+            android:name=".DriverUser.Activities.UserHistory"
+            android:exported="false" />
+        <activity
+            android:name=".DriverUser.Activities.NearByArea"
+            android:exported="false" />
+        <activity
+            android:name=".DriverUser.Activities.BookParkingArea"
+            android:exported="false" />
+        <activity
+            android:name=".OwnerUser.Activities.AddParkingPosition"
+            android:exported="false" />
+        <activity
+            android:name=".DriverUser.Activities.GPSMap"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/MAPS_API_KEY" /> <!-- Google Maps API key -->
+        <activity
+            android:name=".ui.Profile.ChangePassword"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Profile.PersonalDetails"
+            android:exported="false" />
+        <activity
+            android:name=".OwnerUser.Activities.OwnerContainer"
+            android:exported="false" />
+        <activity
+            android:name=".DriverUser.Activities.DriverContainer"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterLogin.ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterLogin.Verify"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterLogin.Login"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterLogin.Register"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Restricted"
+            android:exported="false"
+            android:theme="@style/SlideAnimation" />
+        <activity
+            android:name=".ui.EditActivity"
+            android:exported="false"
+            android:theme="@style/SlideAnimation" />
+        <activity
+            android:name=".ui.SettingActivity"
+            android:exported="false"
+            android:theme="@style/SlideAnimation" />
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="false"
+            android:theme="@style/SlideAnimation" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.com.vansuita.pickimage.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/picker_provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

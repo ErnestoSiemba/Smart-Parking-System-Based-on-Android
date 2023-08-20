@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_5"
+    tools:context=".DriverUser.Activities.Bluetooth">
+
+    <include layout="@layout/custom_action_bar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/connection_status_text"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="normal"/>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkout_button"
+        android:text="CHECKOUT DEMO"
+        android:background="@drawable/button_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/connection_status_text"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkout_button"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="5dp"
+        android:id="@+id/list_view"
+        android:divider="@color/grey_5"
+        android:dividerHeight="1dp"
+        tools:listitem="@layout/list_item_device"/>
+
+
+
+
+
+
+
+</RelativeLayout>

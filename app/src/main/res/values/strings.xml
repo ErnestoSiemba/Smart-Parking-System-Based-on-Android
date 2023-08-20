@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">GeniusPark</string>
+    <string name="setting_Intro">Plate Recognizer offers FREE Plans with high-accuracy license and plate recognition in over 60 countries worldwide</string>
+    <string name="country_codeGuide">2-letter country code separated by a space: gd de it fr USA and Australia can include the state:us-ca au-qld </string>
+    <string-array name="size">
+        <item>100</item>
+        <item>90</item>
+        <item>80</item>
+        <item>70</item>
+        <item>60</item>
+        <item>50</item>
+        <item>40</item>
+        <item>30</item>
+        <item>20</item>
+        <item>10</item>
+    </string-array>
+
+
+    <!--    String Resources for Registration, Login and Profile Pages   -->
+    <!--    Register Page-->
+    <string name="signUpWelcomeText">Welcome, Sign Up to continue...</string>
+    <string name="fullName">Full Name</string>
+    <string name="email">Email</string>
+    <string name="nin">NIN Number</string>
+    <string name="phoneNumber">Phone Number</string>
+    <string name="numberPlate">Number Plate</string>
+    <string name="password">Password</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="alreadyLogin">Already have an account?</string>
+    <string name="signInText">Sign In</string>
+    <string name="registerButton">REGISTER</string>
+    <!--    Login Page -->
+    <string name="loginWelcomeText1">Welcome Back</string>
+    <string name="loginWelcomeText12">Sign In to continue...</string>
+    <string name="forgotPassword">Forgot Password?</string>
+    <string name="loginButton">LOGIN</string>
+    <string name="noAccount">Don\'t have an Account?</string>
+    <string name="registerText">Sign Up</string>
+
+    <!--    Radio Group and Radio Buttons-->
+    <string name="radioGroupUserType">User Type</string>
+    <string name="driverRadioButton">Driver</string>
+    <string name="ownerRadioButton">Owner</string>
+
+    <!--    Forgot Password Page  -->
+    <string name="forgotWelcomeText">Reset Password</string>
+    <string name="forgotGuidingText">Enter your Email to reset password</string>
+    <string name="forgotButton">RESET PASSWORD</string>
+
+    <!--    Profiles -->
+
+    <string name="current_email">Current Email ID</string>
+    <string name="new_email">New Email ID</string>
+    <string name="current_password">Current Password</string>
+    <string name="update_normal_button">UPDATE INFO</string>
+    <string name="update_email">UPDATE EMAIL</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="confirm_password_change">CHANGE PASSWORD</string>
+    <string name="personal_details">View Personal Details</string>
+    <string name="change_account_password">Change Account Password</string>
+    <string name="logout">Logout</string>
+    <string name="delete_account">Delete My Account</string>
+    <string name="general">GENERAL</string>
+    <string name="others">OTHERS</string>
+
+
+    <string name="MAPS_API_KEY">AIzaSyA2wE10soWmWXt-LZlPC3pU7V5bcGWOpTs</string>
+    <string name="platerecognizer_api_key">d454bc4bd280096f8d75c2ab5f3405f0c1b65897</string>
+    <string name="numberplate_pop_title">Add Vehicle</string>
+
+
+    <string name="notification_group_id_1">check_booking</string>
+    <string name="notification_channel_id_1">channeldID1</string>
+    <string name="notification_group_name_1">Group 1</string>
+    <string name="notification_channel_name_1">Channel name</string>
+
+</resources>
