@@ -65,8 +65,8 @@
     <string name="others">OTHERS</string>
 
 
-    <string name="MAPS_API_KEY">AIzaSyA2wE10soWmWXt-LZlPC3pU7V5bcGWOpTs</string>
-    <string name="platerecognizer_api_key">d454bc4bd280096f8d75c2ab5f3405f0c1b65897</string>
+    <string name="MAPS_API_KEY">ERNEY_AIzaSyA2wE10soWmWXt-LZlPC3pU7V5bcGWOpTs</string>
+    <string name="platerecognizer_api_key">d454bc4bd280096f8d75c2ab5f3405f0c1b65897_ERNEY</string>
     <string name="numberplate_pop_title">Add Vehicle</string>
 
 
