@@ -29,7 +29,7 @@
 
         <meta-data
             android:name="com.hover.ApiKey"
-            android:value="1d1ec3e6feb1199d949f8d50c4826baf" />
+            android:value="hover api key goes here" />
 
         <activity
             android:name=".ui.SplashScreen"
